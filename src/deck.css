@@ -1,0 +1,148 @@
+
+.deck {
+  //border: 1px solid black; 
+  position: relative;
+  //margin-top: 200px;
+  padding-top: 100px;
+  width: 400px;
+  margin: 0 auto;
+  height: 400px;
+  //padding-bottom: 200px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */  
+}
+
+.card-container {
+  position: absolute;
+  display: inline;
+  height: 300px;
+  width: 300px;
+  will-change: transform;
+}
+
+
+.card-meta {
+	margin: 0 auto; 
+	position: relative;
+	//margin-top: 500px;
+	width: 100% !important;
+	max-width: 800px;
+}
+
+.card-description {
+  text-align: left;
+}
+
+.deck > div > div {
+  background-color: white;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  width: 200px;
+  height: 270px;
+  will-change: transform;
+  border-radius: 30px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+#accordeon-container > div{
+	position: relative;
+	height: auto; 
+	width: 100%;
+}
+
+.accordeon {
+	display: flex;
+	overflow: hidden;
+}
+
+.accordeon > div {
+	text-align: center;
+	padding-bottom: 120px;
+}
+
+#accordeon-container > div > h2 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 120px;
+}
+
+.accordeon > div > .display-5 {
+	margin-top: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block; 
+}
+
+.accordeon-left {
+	background-color: #f7941e;
+	flex-grow: .5;
+	cursor: pointer;
+}
+
+.accordeon-right {
+	background-color: rgb(92, 192, 208);
+	flex-grow: .5;
+	cursor: pointer;
+}
+.accordeon > div > .display-5 {
+	transition: all .1s ease-in-out;
+	cursor: pointer;
+}
+
+.accordeon-right .display-5:hover {
+	transform: scale(1.05);
+}
+
+.accordeon-left .display-5:hover {
+	transform: scale(1.05);
+}
+
+
+#summary p.collapse:not(.show) {
+    height: 60px !important;
+    overflow: hidden;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+}
+
+#summary p.collapsing {
+    min-height: 60px !important;
+}
+
+#summary a {
+  color: white;
+}
+
+#summary a:hover {
+  text-decoration: underline !important;
+}
+
+#summary a.collapsed:after  {
+    content: '+ Читать полностью';
+}
+
+#summary a:not(.collapsed):after {
+    content: '- Свернуть';
+}
+
+.deck-clue {
+  position: relative;
+  top: 240px;
+  left: -180px;
+  color: white;
+  transform: rotateZ(-90deg);
+}
+
