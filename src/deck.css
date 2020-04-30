@@ -1,9 +1,13 @@
 
 .deck {
+  //border: 1px solid black; 
   position: relative;
+  //margin-top: 200px;
   padding-top: 100px;
+  //width: 400px;
   margin: 0 auto;
   height: 400px;
+  //padding-bottom: 200px;
   cursor: pointer;
   display: flex;
   align-items: center;  
@@ -28,6 +32,7 @@
 .card-meta {
 	margin: 0 auto; 
 	position: relative;
+	//margin-top: 500px;
 	width: 100% !important;
 	max-width: 800px;
 }
