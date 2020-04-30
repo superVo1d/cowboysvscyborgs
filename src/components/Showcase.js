@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AddToCartButton from './AddToCartButton.js';
+import Popup from './Popup.js';
 import { Link } from "react-scroll";
 
 const Showcase = (props) => {
 
+  const [ popupWasOpened, setPopupWasOpened ] = useState(false)
+
   return (
+    <>
+    {popupWasOpened && <Popup />}
     <div id="shop" className="container-fluid position-relative" style={{paddingTop: "120px", paddingBottom: "120px"}}>
       <Link to="accordeon-container" smooth={true} duration={600} style={{position: "absolute", height: "120px", width: "100vw", left: 0, top: "0", zIndex: 1}} />
       <div className="row px-0 px-sm-5 m-w-container">
@@ -72,7 +77,7 @@ const Showcase = (props) => {
                 {/*<h2 className="old-price">1190&nbsp;руб</h2>
                 <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 3&nbsp;раза</p>*/}
                 <p className="lead main-btn-group">
-                  <AddToCartButton btnId={1} />
+                  <AddToCartButton btnId={1} setPopupWasOpened={setPopupWasOpened} />
                 </p>
               </div>            
             </div>
@@ -96,7 +101,7 @@ const Showcase = (props) => {
                 {/*<h2 className="old-price">1690&nbsp;руб</h2>
                 <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 5&nbsp;раз</p>*/}
                 <p className="lead main-btn-group">
-                  <AddToCartButton btnId={2} />
+                  <AddToCartButton btnId={2} setPopupWasOpened={setPopupWasOpened} />
                 </p>
               </div>            
             </div>
@@ -120,7 +125,7 @@ const Showcase = (props) => {
                 {/*<h2 className="old-price">1990&nbsp;руб</h2>}
                 <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 2&nbsp;раза</p>*/}
                 <p className="lead main-btn-group">
-                  <AddToCartButton btnId={3} />
+                  <AddToCartButton btnId={3} setPopupWasOpened={setPopupWasOpened} />
                 </p>
               </div>            
             </div>
@@ -130,6 +135,7 @@ const Showcase = (props) => {
       <Link to="feedback" smooth={true} duration={600} style={{position: "absolute", height: "120px", width: "100vw", left: 0, bottom: "0"}} />
       <Link to="shop" smooth={true} duration={600} style={{position: "absolute", height: "120px", width: "100vw", left: 0, bottom: "-120px", zIndex: 1}} />
     </div>
+    </>
   )
 }
 

@@ -19,7 +19,6 @@ const App = () => {
     if (isOpenRight) {
       setIsOpenRight(state => !state)
     }
-    console.log('left')
   }
 
   function handleClickRight() {
@@ -30,7 +29,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Popup />
       <ShoppingCart />
       <FirstScreen handleClickLeft={handleClickLeft}
                   handleClickRight={handleClickRight}/>

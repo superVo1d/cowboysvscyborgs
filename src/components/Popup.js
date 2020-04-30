@@ -79,7 +79,7 @@ const Popup = () => {
 		      <a onClick={(e) => closePopupModal(e)} className="cross-btn position-fixed" role="button" href="/">
 		        <img className="cross-btn-icon" src="images/close.svg" alt="close" />
 		      </a>
-		      <div className="checkout-form">
+		      <div className="checkout-form popup">
 		        <div className="px-3 px-sm-5 py-5 text-center">
 		          {formIsCompleted ?
 		          	(<h2 style={{padding: "90px 0"}}>Спасибо!</h2>)

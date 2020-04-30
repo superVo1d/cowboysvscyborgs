@@ -55,13 +55,13 @@ p {
 	padding-top: 5em;
 	padding-bottom: 1.5em;
 	padding-left: 8em !important;
-	//padding-right: 8em !important;
-	background-color: white;
+	padding-right: 8em !important;
+	background-color: transparent;
 }
 
 .display-5 {
 	font-family: "Futura PT Heavy", sans-serif;
-	font-size: 2.8em;
+	font-size: 2.2em;
 	line-height: 1.1em;
 }
 
@@ -136,9 +136,22 @@ p {
 	color: #6e3cb8;
 }
 
+#small-screen-bg {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	//height: 70vh;
+	background: url(/images/bg-small.png) no-repeat center;
+	background-size: cover;
+}
+
 #first-screen-image {
 	background: url(/images/Cyberpunk_female_killer_Daodao_Mao.jpeg) no-repeat center center;
-	max-height: 100vh;
+	height: 100vh;
+	max-height: 748px;
 	min-height: 687px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -147,6 +160,7 @@ p {
 }	
 
 .cvsc-card {
+	position: relative;
 	cursor: pointer;
 	display: inline-flex;
 	flex-direction: row;
@@ -158,9 +172,9 @@ p {
 	color: white;
 	transition: all .1s ease-in-out;
 	appearance: none !important;
-	-webkit-box-shadow: 0px 0px 83px -59px rgba(0,0,0,0.76);
-	-moz-box-shadow: 0px 0px 83px -59px rgba(0,0,0,0.76);
-	box-shadow: 0px 0px 83px -59px rgba(0,0,0,0.76);
+	-webkit-box-shadow: 0px 0px 14px -8px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 14px -8px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 14px -8px rgba(0,0,0,0.8);
 }
 
 .cvsc-card:hover {
@@ -175,7 +189,7 @@ p {
 
 .cvsc-card:nth-child(1) {
 	color: black !important;
-	background: url(/images/logo.png) no-repeat center center;
+	background: url(/images/logo-min.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -184,7 +198,7 @@ p {
 
 .cvsc-card:nth-child(2) {
 	color: white !important;
-	background: url(/images/cowboys.png) no-repeat center center;
+	background: url(/images/cowboys-min.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -193,7 +207,7 @@ p {
 
 .cvsc-card:nth-child(3) {
 	color: white !important;
-	 background: url(/images/cyborgs.png) no-repeat center center;
+	 background: url(/images/cyborgs-min.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -423,8 +437,10 @@ p {
 }
 
 .cvsc-card-container-sm {
+	height: 240px;
 	display: none;
 	bottom: 80px;
+	padding-top: 20px;
 }
 
 .cvsc-card-container-lg {
@@ -437,13 +453,12 @@ p {
 }
 
 @media (max-width: 576px) {
+	#title-label {
+		font-size: 2rem !important;
+	}
 
 	.scroll {
 		top: 50px;
-	}
-
-	.deck-clue {
-		left: -160px;
 	}
 
 	.accordeon {
@@ -466,13 +481,17 @@ p {
 		display: none;
 	}
 
+	.arrow {
+		display: none;
+	}
+
 	div.carousel-inner {
 		padding: 0 !important;
 	}
 
-	.jumbotron {
-		padding-left: 1em !important;
-		//padding-right: 1em !important;
+	div.jumbotron {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 
 	.cross-btn {
@@ -487,12 +506,6 @@ p {
 }
 
 @media (max-width: 781px) {
-
-	.jumbotron {
-		padding-left: 2em !important;
-		//padding-right: 2em;
-	}
-
 	.display-5 {
 		font-size: 2.5rem !important;
 	}
@@ -500,9 +513,38 @@ p {
 	.scroll {
 		top: 50px;
 	}
+
+	.deck-clue {
+		left: -140px;
+	}
 }
 
 @media (max-width: 874px) {
+
+
+	#small-screen-bg {
+		display: block;
+	}
+
+	.display-5 {
+		color: white;
+	}
+
+	.jumbotron > p {
+		color: white;
+	}
+
+	.btn-outline-primary {
+		color: white !important;
+		border-color: white !important;
+	}
+
+	.btn-outline-primary:hover {
+		color: #6e3cb8 !important;
+		background-color: white !important;
+		border-color: white !important;
+	}
+
 	.cvsc-card-container-sm {
 		display: block;
 	}
@@ -536,7 +578,15 @@ p {
 	}
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
+	.jumbotron {
+		padding-left: 2em !important;
+		padding-right: 2em !important;;
+	} 
+
+	#first-screen-image {
+		filter: brightness(60%);
+	}
 
 	.display-5 {
 		font-size: 2em
@@ -649,6 +699,10 @@ p {
 	background-color: white;
     box-sizing: border-box;
 	overflow: auto;
+}
+
+.checkout-form.popup {
+	margin-top: 20vh;
 }
 
 .item-btn-group {

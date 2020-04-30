@@ -7,7 +7,7 @@ const Input = (props) => {
 
 	const inputStyle = useSpring({
 		borderBottom: isFocused ? "1px solid transparent" : "1px solid #c8cbcf",
-		textAlign: (props.align == "center") ? "center" : "left",
+		textAlign: (props.align === "center") ? "center" : "left",
 		config: { duration: 100 }
 	});
 
@@ -19,9 +19,9 @@ const Input = (props) => {
 	const placeholderStyle = useSpring({
 		fontSize: isFocused ? "12px" : "21px",
 		marginTop: isFocused ? "0" : "12px",
-		transform: (props.align == "center") ? "transalteX(-50%)" : "transalteX(0)",
-		right: (props.align == "center") ? 0 : "auto",
-		left: (props.align == "center") ? 0 : "auto",
+		transform: (props.align === "center") ? "transalteX(-50%)" : "transalteX(0)",
+		right: (props.align === "center") ? 0 : "auto",
+		left: (props.align === "center") ? 0 : "auto",
 		config: { duration: 100 }
 	});
 

@@ -7,6 +7,7 @@ const AddToCartButton = (props) => {
 
   function handleClick() {
     props.addToCart(props.btnId);
+    props.setPopupWasOpened(true);
   }
 
   return (
