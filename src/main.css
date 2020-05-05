@@ -823,3 +823,24 @@ ul > li {
 	max-width: 300px;
 	z-index: 0;
 }
+
+.review_card {
+	border-radius: 15px;
+	display: flex;
+	background: #ffffff;
+	box-shadow:  8px 8px 16px #d9d9d9, 
+             	-8px -8px 16px #ffffff;
+ 	padding: 20px;
+}
+
+.review_card > .description {
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+.review_card > .userpic {
+	border-radius: 60px;
+	min-width: 60px;
+	height: 60px;
+	//background-color: black;
+}

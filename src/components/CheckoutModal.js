@@ -64,7 +64,7 @@ const CheckoutModal = (props) => {
           <div className="text-right mt-4">
             <p className="lead font-weight-bold">К оплате: {props.total} руб</p>
           </div>
-          <p className="lead">Мы&nbsp;вышлем вам инструкции к&nbsp;оплате на&nbsp;почту</p>
+          <p className="lead">Заполните поля формы и&nbsp;наш оператор скоро свяжется с&nbsp;вами для подтверждения заказа и&nbsp;выбора способа оплаты.</p>
           <CheckoutModalForm setOrderIsCompleted={setOrderIsCompleted} orderIsCompleted={orderIsCompleted} />
         </div>
       </div>

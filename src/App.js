@@ -10,8 +10,9 @@ import YandexMetrika from './components/YandexMetrika.js';
 import Accordeon from './components/Accordeon.js';
 import Popup from './components/Popup.js'
 import OpenRulesButton from './components/OpenRulesButton.js'
-//import Map from './components/Map.js'
-import GifAdder from './components/GifAdder.js'
+//import GifAdder from './components/GifAdder.js'
+import Delivery from './components/Delivery.js'
+import Reviews from './components/Reviews.js'
 
 const App = () => {
 
@@ -52,7 +53,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {(id === 1) && <GifAdder />}
+      {/*(id === 1) && <GifAdder />*/}
       <Popup id={id} />
       <OpenRulesButton rulesButtonIsActive={rulesButtonIsActive} />
       <ShoppingCart />
@@ -60,11 +61,13 @@ const App = () => {
       handleClickLeft={handleClickLeft}
      handleClickRight={handleClickRight}/>
       <SecondScreen id={id} />
+      <Reviews id={id} />
       <Accordeon isOpenRight={isOpenRight} 
               setIsOpenRight={setIsOpenRight} 
              handleClickLeft={handleClickLeft}
             handleClickRight={handleClickRight}/>
       <Showcase />
+      <Delivery />
       <Feedback />
       <Footer />
       <YandexMetrika />

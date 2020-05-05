@@ -9,11 +9,12 @@ const CheckoutModalForm = (props) => {
   const [templateParams, setTemplateParams] = useState({
     "name": "",
     "email": "",
+    "adress": "",
     "code": "",
     "order": props.items
   });
 
-  const formIsFilled = (props.items.length !== 0) && (templateParams["name"] !== "") && (templateParams["email"] !== "");
+  const formIsFilled = (props.items.length !== 0) && (templateParams["name"] !== "") && (templateParams["email"] !== "") && (templateParams["adress"] !== "");
 
   const service_id = "default_service";
   const template_id = "order";
@@ -26,6 +27,7 @@ const CheckoutModalForm = (props) => {
     let objToSend = {
       "name": templateParams["name"],
       "email": templateParams["email"],
+      "adress": templateParams["adress"],
       "code": templateParams["code"],
       "order": JSON.stringify(templateParams["order"])
     }
@@ -40,6 +42,7 @@ const CheckoutModalForm = (props) => {
          setTemplateParams({
             "name": "",
             "email": "",
+            "adress": "",
             "code": "",
             "order": []
           });
@@ -55,6 +58,8 @@ const CheckoutModalForm = (props) => {
       setTemplateParams({...templateParams, "name": e.target.value});
     } else if (e.target.name === "email") {
       setTemplateParams({...templateParams, "email": e.target.value});
+    } else if (e.target.name === "adress") {
+      setTemplateParams({...templateParams, "adress": e.target.value});
     } else if (e.target.name === "code") {
       setTemplateParams({...templateParams, "code": e.target.value});
     }
@@ -68,6 +73,7 @@ const CheckoutModalForm = (props) => {
 
             <Input placeholder="Как к вам обращаться" value={templateParams.name} handleChange={handleChange} name="name" />
             <Input placeholder="Ваша электропочта" value={templateParams.email} handleChange={handleChange} name="email" />
+            <Input placeholder="Адрес" value={templateParams.adress} handleChange={handleChange} name="adress" />
             <Input placeholder="Промокод" value={templateParams.code} handleChange={handleChange} name="code" />
 
             <p className="lead pt-2">
