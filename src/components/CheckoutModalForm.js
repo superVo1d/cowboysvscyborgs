@@ -9,6 +9,7 @@ const CheckoutModalForm = (props) => {
   const [templateParams, setTemplateParams] = useState({
     "name": "",
     "email": "",
+    "code": "",
     "order": props.items
   });
 
@@ -25,6 +26,7 @@ const CheckoutModalForm = (props) => {
     let objToSend = {
       "name": templateParams["name"],
       "email": templateParams["email"],
+      "code": templateParams["code"],
       "order": JSON.stringify(templateParams["order"])
     }
 
@@ -38,6 +40,7 @@ const CheckoutModalForm = (props) => {
          setTemplateParams({
             "name": "",
             "email": "",
+            "code": "",
             "order": []
           });
 
@@ -52,6 +55,8 @@ const CheckoutModalForm = (props) => {
       setTemplateParams({...templateParams, "name": e.target.value});
     } else if (e.target.name === "email") {
       setTemplateParams({...templateParams, "email": e.target.value});
+    } else if (e.target.name === "code") {
+      setTemplateParams({...templateParams, "code": e.target.value});
     }
   }
 
@@ -63,6 +68,7 @@ const CheckoutModalForm = (props) => {
 
             <Input placeholder="Как к вам обращаться" value={templateParams.name} handleChange={handleChange} name="name" />
             <Input placeholder="Ваша электропочта" value={templateParams.email} handleChange={handleChange} name="email" />
+            <Input placeholder="Промокод" value={templateParams.code} handleChange={handleChange} name="code" />
 
             <p className="lead pt-2">
               <button onClick={(e) => handleSubmit(e)} type="submit" id="call-us-btn" className={formIsFilled ? "btn btn-lg btn-block btn-primary mt-4" : "btn btn-lg btn-block btn-primary-disabled mt-4"} disabled={formIsFilled ? "" : "disabled"}>ПОДТВЕРДИТЬ ЗАКАЗ</button>

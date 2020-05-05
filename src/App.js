@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import FirstScreen from './components/FirstScreen.js';
 import ShoppingCart from './components/ShoppingCart.js';
@@ -9,11 +9,18 @@ import Footer from './components/Footer.js';
 import YandexMetrika from './components/YandexMetrika.js';
 import Accordeon from './components/Accordeon.js';
 import Popup from './components/Popup.js'
-
+import OpenRulesButton from './components/OpenRulesButton.js'
+//import Map from './components/Map.js'
+import GifAdder from './components/GifAdder.js'
 
 const App = () => {
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = parseInt(urlParams.get('utm_content'));
+
   const [isOpenRight, setIsOpenRight] = useState(false)
+
+  const [rulesButtonIsActive, setRulesButtonIsActive] = useState(false)
 
   function handleClickLeft() {
     if (isOpenRight) {
@@ -27,12 +34,32 @@ const App = () => {
     }   
   }
 
+  function listener() {
+    if (window.pageYOffset > document.documentElement.clientHeight) {
+      setRulesButtonIsActive(true)
+    } else {
+      setRulesButtonIsActive(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", listener);
+
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  });
+
   return (
     <div className="App">
+      {(id === 1) && <GifAdder />}
+      <Popup id={id} />
+      <OpenRulesButton rulesButtonIsActive={rulesButtonIsActive} />
       <ShoppingCart />
-      <FirstScreen handleClickLeft={handleClickLeft}
-                  handleClickRight={handleClickRight}/>
-      <SecondScreen />
+      <FirstScreen id={id}
+      handleClickLeft={handleClickLeft}
+     handleClickRight={handleClickRight}/>
+      <SecondScreen id={id} />
       <Accordeon isOpenRight={isOpenRight} 
               setIsOpenRight={setIsOpenRight} 
              handleClickLeft={handleClickLeft}

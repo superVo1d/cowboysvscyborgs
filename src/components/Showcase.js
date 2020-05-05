@@ -9,7 +9,7 @@ const Showcase = (props) => {
 
   return (
     <>
-    {popupWasOpened && <Popup />}
+    {/*popupWasOpened && <Popup />*/}
     <div id="shop" className="container-fluid position-relative" style={{paddingTop: "120px", paddingBottom: "120px"}}>
       <Link to="accordeon-container" smooth={true} duration={600} style={{position: "absolute", height: "120px", width: "100vw", left: 0, top: "0", zIndex: 1}} />
       <div className="row px-0 px-sm-5 m-w-container">
@@ -73,9 +73,9 @@ const Showcase = (props) => {
                   </li>
               </ul>
               <div className="pt-5" style={{marginLeft: "2.4em"}}>
-                <h2 style={{marginRight: ".5em"}}>550&nbsp;руб</h2>
-                {/*<h2 className="old-price">1190&nbsp;руб</h2>
-                <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 3&nbsp;раза</p>*/}
+                <h2 style={{marginRight: ".5em", float: "left"}}>790&nbsp;руб</h2>
+                <h2 className="old-price">990&nbsp;руб</h2>
+                <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 3&nbsp;раза</p>
                 <p className="lead main-btn-group">
                   <AddToCartButton btnId={1} setPopupWasOpened={setPopupWasOpened} />
                 </p>
@@ -97,9 +97,9 @@ const Showcase = (props) => {
                   </li>
               </ul>
               <div className="pt-5" style={{marginLeft: "2.4em"}}>
-                <h2 style={{marginRight: ".5em"}}>750&nbsp;руб</h2>
-                {/*<h2 className="old-price">1690&nbsp;руб</h2>
-                <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 5&nbsp;раз</p>*/}
+                <h2 style={{marginRight: ".5em", float: "left"}}>990&nbsp;руб</h2>
+                <h2 className="old-price">1290&nbsp;руб</h2>
+                <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 5&nbsp;раз</p>
                 <p className="lead main-btn-group">
                   <AddToCartButton btnId={2} setPopupWasOpened={setPopupWasOpened} />
                 </p>
@@ -121,9 +121,9 @@ const Showcase = (props) => {
                   </li>
               </ul>
               <div className="pt-5" style={{marginLeft: "2.4em"}}>
-                <h2 style={{marginRight: ".5em"}}>950&nbsp;руб</h2>
-                {/*<h2 className="old-price">1990&nbsp;руб</h2>}
-                <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 2&nbsp;раза</p>*/}
+                <h2 style={{marginRight: ".5em", float: "left"}}>1290&nbsp;руб</h2>
+                <h2 className="old-price">1590&nbsp;руб</h2>
+                <p className="font-weight-bold pt-3" style={{color: "#6e3cb8"}}>Этот набор сегодня купили 2&nbsp;раза</p>
                 <p className="lead main-btn-group">
                   <AddToCartButton btnId={3} setPopupWasOpened={setPopupWasOpened} />
                 </p>

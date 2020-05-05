@@ -3,9 +3,9 @@ import { ADD_TO_CART, REMOVE_ITEM, SUB_QUANTITY, ADD_QUANTITY } from '../actions
 
 const initState = {
     items: [
-        {id: 1, title: 'Базовый набор', price: 550,},
-        {id: 2, title: 'Стандартный набор', price: 750,},
-        {id: 3, title: 'Делюкс набор', price: 950,},
+        {id: 1, title: 'Базовый набор', price: 790,},
+        {id: 2, title: 'Стандартный набор', price: 990,},
+        {id: 3, title: 'Делюкс набор', price: 1290,},
     ],
     addedItems:[],
     quantity: 0,

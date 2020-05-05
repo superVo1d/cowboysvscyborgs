@@ -63,7 +63,7 @@ const Deck = (props) => {
 				    </>
 				))}
 			</div>
-			    {currentCard &&
+			    {(currentCard > 0) &&
 				    <div className="card-meta px-3 px-sm-5">
 					    <h2 className="card-title text-white">{props.cards[currentCard - 1]['title']}</h2>
               <div className="card-description">

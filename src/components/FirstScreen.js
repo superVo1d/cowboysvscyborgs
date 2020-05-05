@@ -57,7 +57,8 @@ const FirstScreen = (props) => {
         <div className="col" ref={firstScreen}>
           <div className="jumbotron px-0">
             <h1 className="display-5"><span id="title-label">Настольная игра</span><br />«КОВБОИ ПРОТИВ КИБОРГОВ»</h1>
-            <p className="lead">Приведи свою команду к&nbsp;победе в&nbsp;противостоянии Науки&nbsp;и&nbsp;Традиций!</p>
+            <p className="lead">Собирайся в&nbsp;захватывающее приключение по&nbsp;маршруту &nbsp;Эль&#8209;Пасо&nbsp;&mdash;&nbsp;Детройт!</p>
+            {/*<p className="lead">Приведи свою команду к&nbsp;победе в&nbsp;противостоянии Науки&nbsp;и&nbsp;Традиций!</p>*/}
             <p className="d-inline-block lead font-weight-bold mb-0 mr-5">От&nbsp;14&nbsp;лет и&nbsp;старше</p>
             <p className="d-inline-block lead font-weight-bold">2-10&nbsp;игроков</p>
             <p className="lead main-btn-group">
@@ -66,16 +67,16 @@ const FirstScreen = (props) => {
             </p>
           </div>
         </div>
-        <div className="col-3 col-lg-4" id="first-screen-image"></div>
+        <div className="col-3 col-lg-4" id="first-screen-image" style={{backgroundImage: "url(/images/adventure-bg.png)"}}></div>
         <div className="cvsc-card-container cvsc-card-container-sm position-relative" style={{marginTop: "90px"}}>
           <div style={{width: "790px"}}>
             <Link className="cvsc-card" to="shop" smooth={true} duration={600} role="button">
               <h3>Что внутри</h3>
             </Link>
-            <a onClick={e => leftClicked(e)} className="cvsc-card" href="/" role="button">
+            <a onClick={e => leftClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/timothy_chalamet.jpg')"} : {backgroundImage: "url('images/cowboys.svg')"}} href="/" role="button">
               <h3>Ковбои</h3>
             </a>
-            <a onClick={e => rightClicked(e)} className="cvsc-card" href="/" role="button">
+            <a onClick={e => rightClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/cyborg-light.jpg')"} : {backgroundImage: "url('images/cyborgs.svg')"}} href="/" role="button">
               <h3>Киборги</h3>
             </a>
           </div>    
@@ -88,16 +89,15 @@ const FirstScreen = (props) => {
               <Link className="cvsc-card" to="shop" smooth={true} duration={600} role="button">
                 <h3>Что внутри</h3>
               </Link>
-              <a onClick={e => leftClicked(e)} className="cvsc-card" href="/" role="button">
+              <a onClick={e => leftClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/timothy_chalamet.jpg')"} : {backgroundImage: "url('images/cowboys.svg')"}} href="/" role="button">
                 <h3>Ковбои</h3>
               </a>
-              <a onClick={e => rightClicked(e)} className="cvsc-card" href="/" role="button">
+              <a onClick={e => rightClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/cyborg-light.jpg')"} : {backgroundImage: "url('images/cyborgs.svg')"}} href="/" role="button"> 
                 <h3>Киборги</h3>
               </a>
             </div>    
           </div>
           <div className="scroll">
-            {/*<p className="lead text-dark">Узнать больше</p>*/}
             <div className="scroll-icon"></div>
           </div>
         </div>

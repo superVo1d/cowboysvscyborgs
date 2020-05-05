@@ -145,6 +145,8 @@ p {
 	width: 100%;
 	//height: 70vh;
 	background: url(/images/bg-small.png) no-repeat center;
+	background: url(/images/adventure-bg.png) no-repeat center;
+	filter: brightness(60%); 
 	background-size: cover;
 }
 
@@ -304,6 +306,7 @@ p {
 }
 
 .carousel-indicators {
+	z-index: 1;
 	margin-bottom: 0;
 	transform: translateY(200%);
 }
@@ -453,6 +456,16 @@ p {
 }
 
 @media (max-width: 576px) {
+	.btn-rules {
+		left: 50%;
+		right: 50% !important;
+		transform: translateX(-50%);
+	}
+
+	.btn-rules:hover {
+		transform: translateX(-50%) scale(1.05) !	important;
+	}
+
 	#title-label {
 		font-size: 2rem !important;
 	}
@@ -506,6 +519,11 @@ p {
 }
 
 @media (max-width: 781px) {
+	img.sun {
+		max-width: 200px;
+		z-index: 2;
+	}
+
 	.display-5 {
 		font-size: 2.5rem !important;
 	}
@@ -750,4 +768,58 @@ p {
 
 #mailto:hover {
 	text-decoration: underline !important;
+}
+
+ul > li {
+	margin-bottom: 5px;
+}
+
+.btn-rules {
+	z-index: 10;
+	height: 60px;
+	width: 260px;
+	border-radius: 30px;
+	background-color: white;
+	border: none;
+	padding-top: 10px;
+	z-index: 2;
+	right: 40px;
+	outline: none;
+	bottom: 40px;
+	-webkit-box-shadow: 0px 0px 17px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -10px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -10px rgba(0,0,0,0.75);
+    -webkit-animation: fadein .2s; /* Safari, Chrome and Opera > 12.1 */
+        animation: fadein .2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.btn-rules:focus,.btn-rules:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.btn-rules:hover {
+	background-color: white;
+	transform: scale(1.05);
+}
+
+.map {
+	max-height: 600px;
+	height: auto;
+	width: auto;
+}
+
+.sun {
+	max-width: 300px;
+	z-index: 0;
 }

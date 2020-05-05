@@ -2,21 +2,34 @@ import React from 'react';
 
 import { Link } from "react-scroll";
 
-const SecondScreen = () => {
+const SecondScreen = (props) => {
   return (
     <div id="second-screen" className="container-fluid text-white" style={{position: "relative", backgroundColor: "#5cc0d0", marginTop: "120px", paddingTop: "120px", paddingBottom: "120px"}}>
       <Link to="second-screen" smooth={true} duration={600} style={{position: "absolute", height: "200px", width: "100vw", left: 0, top: "-200px"}} />
       <Link to="first-screen" smooth={true} duration={600} style={{position: "absolute", height: "120px", width: "100vw", left: 0, top: 0}} />
       <div className="row m-w-container">
-        <div className="col text-center">
+        <div className="col text-center position-relative">
           <h2>ТЕБЯ УЖЕ ЖДУТ</h2>
+          {(props.id === 1) &&
+            <img className ="sun position-absolute" src="images/sun.gif" style={{top: 0, right: 0}} />
+          }
+          {(props.id === 3 || props.id === 6) &&
+            <img className ="sun position-absolute" src="images/sun.png" style={{top: 0, right: 0}} />
+          }
+          {(props.id === 3 || props.id === 6) &&
+            <img className ="sun position-absolute" src="images/rabbit.gif" style={{top: "100px", left: "20px", zIndex: 3}} />
+          }
         </div>
       </div>
 
       <div className="row m-w-container pt-5">
         <div className="col-12 col-md-6 px-0 px-sm-5 frame">
             <span className="helper"></span>
-            <img className="card-stack w-100" src="/images/card-stack-blue.png" alt="card-stack-blue.png" />
+            {(props.id === 1) ?
+              <img className="card-stack w-100" src="/images/dancing_coffin.gif" alt="dancing_coffin.gif" />
+              :
+              <img className="card-stack w-100" src="/images/card-stack-blue.png" alt="card-stack-blue.png" />
+            }
         </div>
         <div className="col-12 col-md-5 pt-3 pb-0 pb-md-3">
           <div className="advantages-list my-5 ml-5 position-relative">

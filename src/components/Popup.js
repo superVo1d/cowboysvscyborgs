@@ -1,22 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Input from './Input'
 import emailjs from 'emailjs-com'
-import Confetti from 'react-dom-confetti'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 
-const Popup = () => {
-
-	const config = {
-	  angle: "90",
-	  spread: "143",
-	  startVelocity: 45,
-	  elementCount: "72",
-	  dragFriction: "0.07",
-	  duration: "1920",
-	  stagger: "2",
-	  width: "29px",
-	  height: "29px",
-	  colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
-	};
+const Popup = (props) => {
 
 	const service_id = "default_service";
 	const template_id = "template_sJuHBp6H";
@@ -37,6 +24,8 @@ const Popup = () => {
   	const [modalIsOpen, setModal] = useState(false);
 
   	const [formIsCompleted, setFormIsCompleted] = useState(false);
+
+  	const [isCopied, setIsCopied] = useState(false)
 
 	function handleChange(e) {
 	  setTemplateParams({...templateParams, "email": e.target.value});
@@ -70,30 +59,48 @@ const Popup = () => {
 		}
 	}
 
+	const form = formIsCompleted ?
+		(<h2 style={{padding: "90px 0"}}>Спасибо!</h2>)
+		:
+		(<>
+		  <h2>У нас для тебя хорошие новости!</h2>
+		  <p className="lead">Сегодня ты&nbsp;можешь купить стандартный набор по&nbsp;цене базового. Оформи подписку на&nbsp;дайджест новинок из&nbsp;мира настольных игр и&nbsp;получи невероятную выгоду.</p>
+		  <div className="form-group form-group-checkout position-relative">
+		  	<Input placeholder="Ваша электропочта" value={templateParams.email} handleChange={handleChange} name="email" align="center"/>
+			<p className="lead pt-2">
+				<button onClick={(e) => handleSubmit(e)} type="submit" className="btn btn-lg btn-block btn-primary mt-4">ПОЛУЧИТЬ</button>
+			</p>
+		  </div>
+		</>)
+
+    const modal = () => {
+    	if (props.id === 2 || props.id === 6) {
+			return (<div className="text-center">
+		        		<h2>Дорогая, ни в чем себе не отказывай!</h2>
+		        		<img className="w-100 py-4" src="/images/sales.jpg" style={{maxWidth: "300px"}} />
+						<p className="lead">Если при покупке ты введешь наш секретрный код, то сможешь получить стандартный набор по&nbsp;цене базового!</p>
+						<h3 className="mt-4">ASHOT69</h3>
+						<p className="lead pt-2">
+						<CopyToClipboard text="ASHOT69" onCopy={() => setIsCopied(true)}>
+				          <button onClick={(e) => handleSubmit(e)} type="submit" className="btn btn-lg btn-block btn-secondary mt-4">{isCopied ? "КОД СКОПИРОВАН" : "КОПИРОВАТЬ КОД"}</button>
+				        </CopyToClipboard>
+						</p>
+				</div>)
+		}
+		else {
+			return form
+		}		
+    }
+
 	return modalIsOpen && (
 		<>
-			<div style={{zIndex: 10000}}>
-			<Confetti active={ formIsCompleted } config={ config }/>
-			</div>
 			<div onClick={(e) => closePopupModal(e)} className="checkout overlay">
 		      <a onClick={(e) => closePopupModal(e)} className="cross-btn position-fixed" role="button" href="/">
 		        <img className="cross-btn-icon" src="images/close.svg" alt="close" />
 		      </a>
 		      <div className="checkout-form popup">
 		        <div className="px-3 px-sm-5 py-5 text-center">
-		          {formIsCompleted ?
-		          	(<h2 style={{padding: "90px 0"}}>Спасибо!</h2>)
-					:
-					(<>
-					  <h2>У нас для тебя хорошие новости!</h2>
-					  <p className="lead">Сегодня ты&nbsp;можешь купить стандартный набор по&nbsp;цене базового. Оформи подписку на&nbsp;дайджест новинок из&nbsp;мира настольных игр и&nbsp;получи невероятную выгоду.</p>
-					  <div className="form-group form-group-checkout position-relative">
-					  	<Input placeholder="Ваша электропочта" value={templateParams.email} handleChange={handleChange} name="email" align="center"/>
-						<p className="lead pt-2">
-							<button onClick={(e) => handleSubmit(e)} type="submit" className="btn btn-lg btn-block btn-primary mt-4">ПОЛУЧИТЬ</button>
-						</p>
-					  </div>
-					</>)}
+		        {modal()}
 		        </div>
 		      </div>
 		    </div>
