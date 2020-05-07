@@ -86,6 +86,17 @@ const Popup = (props) => {
 				        </CopyToClipboard>
 						</p>
 				</div>)
+		} else if (props.id === 1) {
+			return (<div className="text-center">
+		        		<h2>Добро пожаловать снова!</h2>
+						<p className="lead">Если при покупке ты введешь наш секретрный код, то сможешь получить стандартный набор по&nbsp;цене базового!</p>
+						<h3 className="mt-4">ASHOT69</h3>
+						<p className="lead pt-2">
+						<CopyToClipboard text="ASHOT69" onCopy={() => setIsCopied(true)}>
+				          <button onClick={(e) => handleSubmit(e)} type="submit" className="btn btn-lg btn-block btn-secondary mt-4">{isCopied ? "КОД СКОПИРОВАН" : "КОПИРОВАТЬ КОД"}</button>
+				        </CopyToClipboard>
+						</p>
+				</div>)
 		}
 		else {
 			return form

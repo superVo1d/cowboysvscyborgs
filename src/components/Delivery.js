@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 
 const Delivery = () => {
   return (
-    <div id="delivery" className="container-fluid text-white" style={{position: "relative", paddingTop: "120px", paddingBottom: "120px", backgroundColor: "rgb(92, 192, 208)"}}>
+    <div id="delivery" className="container-fluid text-white" style={{position: "relative", paddingTop: "120px", paddingBottom: "120px", backgroundColor: "#cccccc"}}>
       <Link to="delivery" smooth={true} duration={600} style={{position: "absolute", height: "200px", width: "100vw", left: 0, top: "-120px"}} />
       <Link to="accordeon-container" smooth={true} duration={600} style={{position: "absolute", height: "120px", width: "100vw", left: 0, top: 0}} />
       

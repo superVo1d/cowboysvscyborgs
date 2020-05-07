@@ -9,6 +9,8 @@ const Reviews = (props) => {
       return <p className="lead">&laquo;Очаровательно! Цвета коробки отлично сочетаются с&nbsp;моим любимым фильтром в&nbsp;vsco&raquo;</p>
     } else if (props.id === 4) {
       return <p className="lead">&laquo;По&nbsp;Москве игру доставят за&nbsp;пару часов без контакта с&nbsp;курьером. Просто Вау!&raquo;</p>
+    } else if (props.id === 1) {
+      return <p className="lead">&laquo;Каждую пятницу ловим лулзы с пацанами, ковбоями и киборгами!&raquo;</p>
     } else {
       return <p className="lead">&laquo;На&nbsp;мой День Рождения администрация сделала мне скидку 20&nbsp;процентов на&nbsp;любую покупку. Просто Вау!&raquo;</p>
     }
@@ -19,6 +21,8 @@ const Reviews = (props) => {
       return "Мария"
     } else if (props.id === 4) {
       return "Слава"
+    } else if (props.id === 1) {
+      return "MnstrZml"
     } else {
       return "Настя"
     }
@@ -29,6 +33,8 @@ const Reviews = (props) => {
       return <p className="lead">&laquo;На&nbsp;мой День Рождения администрация сделала мне скидку 20&nbsp;процентов на&nbsp;любую покупку. Просто Вау!&raquo;</p>
     } else if (props.id === 4) {
       return <p className="lead">&laquo;Ковбои против Киборгов сочетают в&nbsp;себе экономику как в&nbsp;Монополии и&nbsp;свободу для фантазии как в&nbsp;Диксит&raquo;</p>      
+    } else if (props.id === 1) {
+      return <p className="lead">&laquo;Последний раз я так залипал только в варик в детстве, кайф..&raquo;</p>      
     } else {
       return <p className="lead">&laquo;Отличная игра для больших и&nbsp;весёлых компаний. Только вчера увидел рекламу, а&nbsp;сегодня уже поиграл почти за&nbsp;всех ковбоев, советую&raquo;</p>      
     }
@@ -39,8 +45,10 @@ const Reviews = (props) => {
       return "Диана"
     } else if (props.id === 4) {
       return "Игорь"
+    } else if (props.id === 1) {
+      return "4hellscream"
     } else {
-      return "Ашот"      
+      return "Ашот"    
     }
   }  
 
