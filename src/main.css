@@ -144,14 +144,14 @@ p {
 	left: 0;
 	width: 100%;
 	//height: 70vh;
-	background: url(/images/bg-small.png) no-repeat center;
-	background: url(/images/adventure-bg.png) no-repeat center;
+	background: url(%PUBLIC_URL%/images/bg-small.png) no-repeat center;
+	background: url(%PUBLIC_URL%/images/adventure-bg.png) no-repeat center;
 	filter: brightness(60%); 
 	background-size: cover;
 }
 
 #first-screen-image {
-	background: url(/images/Cyberpunk_female_killer_Daodao_Mao.jpeg) no-repeat center center;
+	background: url(%PUBLIC_URL%/images/Cyberpunk_female_killer_Daodao_Mao.jpeg) no-repeat center center;
 	height: 100vh;
 	max-height: 748px;
 	min-height: 687px;
@@ -191,7 +191,7 @@ p {
 
 .cvsc-card:nth-child(1) {
 	color: black !important;
-	background: url(/images/logo-min.png) no-repeat center center;
+	background: url(%PUBLIC_URL%/images/logo-min.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -200,7 +200,7 @@ p {
 
 .cvsc-card:nth-child(2) {
 	color: white !important;
-	background: url(/images/cowboys-min.png) no-repeat center center;
+	background: url(%PUBLIC_URL%/images/cowboys-min.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -209,7 +209,7 @@ p {
 
 .cvsc-card:nth-child(3) {
 	color: white !important;
-	 background: url(/images/cyborgs-min.png) no-repeat center center;
+	 background: url(%PUBLIC_URL%/images/cyborgs-min.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -227,7 +227,7 @@ p {
 }
 
 .scroll-icon {
-	background: url(/images/scroll.svg) no-repeat center center;
+	background: url(%PUBLIC_URL%/images/scroll.svg) no-repeat center center;
 	position: relative;
 	top: 40px;
 	width: 54px;
@@ -293,14 +293,14 @@ p {
 
 .carousel-control-prev-icon {
 	background-color: red;
-	background: url(/images/prev.svg) no-repeat center center;
+	background: url(%PUBLIC_URL%/images/prev.svg) no-repeat center center;
 	height: 46px;
 	width: 24px;	
 }
 
 .carousel-control-next-icon {
 	background-color: red;
-	background: url(/images/next.svg) no-repeat center center;
+	background: url(%PUBLIC_URL%/images/next.svg) no-repeat center center;
 	height: 46px;
 	width: 24px;			
 }
@@ -315,11 +315,11 @@ p {
 	width: 23px;
 	height: 23px;
 	opacity: 1 !important;
-	background: url(/images/dot.svg) no-repeat center center;
+	background: url(%PUBLIC_URL%/images/dot.svg) no-repeat center center;
 }
 
 .carousel-indicators .active {
-	background: url(/images/dot_filled.svg) no-repeat center center !important;
+	background: url(%PUBLIC_URL%/images/dot_filled.svg) no-repeat center center !important;
 }
 
 .old-price {
