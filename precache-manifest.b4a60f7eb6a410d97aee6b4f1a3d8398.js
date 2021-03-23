@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04e5241ee93e01ed105a65ed6c85738e",
+    "revision": "9610c22b91a24569c9bc960e7becc785",
     "url": "/cowboysvscyborgs/index.html"
   },
   {
-    "revision": "0408f9ff4a01e00ce459",
+    "revision": "c07237d60fd33f8d72e5",
     "url": "/cowboysvscyborgs/static/css/main.dee9d3de.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cowboysvscyborgs/static/js/2.e67a72cd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0408f9ff4a01e00ce459",
-    "url": "/cowboysvscyborgs/static/js/main.54b14c49.chunk.js"
+    "revision": "c07237d60fd33f8d72e5",
+    "url": "/cowboysvscyborgs/static/js/main.b1806188.chunk.js"
   },
   {
     "revision": "e1ad9760ad2cf6276a1d",
