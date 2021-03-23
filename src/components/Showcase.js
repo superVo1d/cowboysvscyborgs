@@ -39,10 +39,10 @@ const Showcase = (props) => {
             </ol>
             <div className="carousel-inner px-5">
               <div className="carousel-item active">
-                <img className="d-block w-100" src="/images/box-scene.jpg" alt="First slide" />
+                <img className="d-block w-100" src="https://supervo1d.github.io/cowboysvscyborgs/images/box-scene.jpg" alt="First slide" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" src="/images/cvsc-card-mockup.png" alt="Second slide" />
+                <img className="d-block w-100" src="https://supervo1d.github.io/cowboysvscyborgs/images/cvsc-card-mockup.png" alt="Second slide" />
               </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
