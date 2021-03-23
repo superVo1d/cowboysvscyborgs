@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cowboysvscyborgs/static/css/main.40bc16a6.chunk.css",
+    "main.css": "/cowboysvscyborgs/static/css/main.dee9d3de.chunk.css",
     "main.js": "/cowboysvscyborgs/static/js/main.54b14c49.chunk.js",
     "main.js.map": "/cowboysvscyborgs/static/js/main.54b14c49.chunk.js.map",
     "runtime-main.js": "/cowboysvscyborgs/static/js/runtime-main.5592e9e5.js",
@@ -8,16 +8,16 @@
     "static/js/2.e67a72cd.chunk.js": "/cowboysvscyborgs/static/js/2.e67a72cd.chunk.js",
     "static/js/2.e67a72cd.chunk.js.map": "/cowboysvscyborgs/static/js/2.e67a72cd.chunk.js.map",
     "index.html": "/cowboysvscyborgs/index.html",
-    "precache-manifest.a267363d1bbb604bb68b0b34f838486a.js": "/cowboysvscyborgs/precache-manifest.a267363d1bbb604bb68b0b34f838486a.js",
+    "precache-manifest.a8d25599bf27794bc8f382b3217b232b.js": "/cowboysvscyborgs/precache-manifest.a8d25599bf27794bc8f382b3217b232b.js",
     "service-worker.js": "/cowboysvscyborgs/service-worker.js",
-    "static/css/main.40bc16a6.chunk.css.map": "/cowboysvscyborgs/static/css/main.40bc16a6.chunk.css.map",
+    "static/css/main.dee9d3de.chunk.css.map": "/cowboysvscyborgs/static/css/main.dee9d3de.chunk.css.map",
     "static/js/2.e67a72cd.chunk.js.LICENSE.txt": "/cowboysvscyborgs/static/js/2.e67a72cd.chunk.js.LICENSE.txt",
     "static/media/main.css": "/cowboysvscyborgs/static/media/ProximaNova-Bold.e2cf3dc2.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.5592e9e5.js",
     "static/js/2.e67a72cd.chunk.js",
-    "static/css/main.40bc16a6.chunk.css",
+    "static/css/main.dee9d3de.chunk.css",
     "static/js/main.54b14c49.chunk.js"
   ]
 }
