@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "00488e531442c7f5e76eead6f4b85358",
+    "revision": "61d88212a3086bf16afe2533d45cf346",
     "url": "/cowboysvscyborgs/index.html"
   },
   {
-    "revision": "6049366e3ed6fb9e2c76",
-    "url": "/cowboysvscyborgs/static/css/main.ed42fd5e.chunk.css"
+    "revision": "006a0edc3093715bb28d",
+    "url": "/cowboysvscyborgs/static/css/main.40bc16a6.chunk.css"
   },
   {
-    "revision": "9660aa84d7457ef920e2",
-    "url": "/cowboysvscyborgs/static/js/2.671a543e.chunk.js"
+    "revision": "dfcdcb1778feae799cbb",
+    "url": "/cowboysvscyborgs/static/js/2.e67a72cd.chunk.js"
   },
   {
     "revision": "90fb4deb912422b947a6490378160cce",
-    "url": "/cowboysvscyborgs/static/js/2.671a543e.chunk.js.LICENSE.txt"
+    "url": "/cowboysvscyborgs/static/js/2.e67a72cd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6049366e3ed6fb9e2c76",
-    "url": "/cowboysvscyborgs/static/js/main.6dc19824.chunk.js"
+    "revision": "006a0edc3093715bb28d",
+    "url": "/cowboysvscyborgs/static/js/main.54b14c49.chunk.js"
   },
   {
     "revision": "e1ad9760ad2cf6276a1d",
