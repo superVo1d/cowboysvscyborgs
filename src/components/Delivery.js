@@ -11,7 +11,7 @@ const Delivery = () => {
       <div className="row m-w-container">
         <div className="col col-lg-8 offset-lg-2 text-center position-relative">
           <h2>БЕСПЛАТНАЯ ДОСТАВКА</h2>
-          <img className="w-100 py-5" src="/images/delivery.svg" style={{maxWidth: 240}} />
+          <img className="w-100 py-5" src="https://supervo1d.github.io/cowboysvscyborgs/images/delivery.svg" style={{maxWidth: 240}} />
           <p className="lead text-white">Мы&nbsp;доставляем заказы курьером СДЭК в&nbsp;течение 2-3 часов с момента заказа в&nbsp;Москве и&nbsp;Московской области и&nbsp;в&nbsp;течение 2&nbsp;рабочих дней по&nbsp;России.</p>
         </div>
       </div>

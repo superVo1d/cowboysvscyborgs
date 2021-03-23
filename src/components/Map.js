@@ -11,7 +11,7 @@ const Map = (props) => {
       <div className="row m-w-container">
         <div className="col text-center">
           <h2>ОТКРОЙ НОВЫЙ СВЕТ ЗАНОВО</h2>
-          <img className="map w-100 pt-5" src="/images/map.svg" />
+          <img className="map w-100 pt-5" src="https://supervo1d.github.io/cowboysvscyborgs/images/map.svg" />
             <p className="font-weight-bold pt-3 position-absolute" style={{color: "#6e3cb8", top: "82%", right: "59%"}}>Эль-Пасо</p>
         </div>
       </div>

@@ -31,19 +31,19 @@ const CartItem = (props) => {
 		  </p>
     	<p className="item-btn-group lead text-right">
       		<a onClick={(e) => handleItemSubstract(e)} className="item-substract-btn" href="/" role="button">
-        		<img src="images/minus.svg" alt="minus" />
+        		<img src="https://supervo1d.github.io/cowboysvscyborgs/images/minus.svg" alt="minus" />
       		</a>
       		<span className="item-quantity">
         		{props.quantity}
       		</span>
 		      <a onClick={(e) => handleItemAdd(e)} className="item-add-btn" href="/" role="button">
-		        <img src="images/plus.svg" alt="plus" />
+		        <img src="https://supervo1d.github.io/cowboysvscyborgs/images/plus.svg" alt="plus" />
 			    </a>
     			<span className="item-price">
     			  {props.quantity * props.price}
     			</span>
     			<a onClick={(e) => handleItemRemove(e)} className="item-delete-btn" href="/" role="button">
-    			  <img src="images/cross.svg" alt="delete" />
+    			  <img src="https://supervo1d.github.io/cowboysvscyborgs/images/cross.svg" alt="delete" />
     			</a>
 		  </p>
   </div>

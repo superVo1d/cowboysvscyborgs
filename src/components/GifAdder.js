@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const path = '/images/gif/'
+const path = 'https://supervo1d.github.io/cowboysvscyborgs/images/gif/'
 
 let arrayOfGifs = []
 

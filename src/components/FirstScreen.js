@@ -66,16 +66,16 @@ const FirstScreen = (props) => {
             </p>
           </div>
         </div>
-        <div className="col-3 col-lg-4" id="first-screen-image" style={{backgroundImage: (props.id === 1) ? "url(/images/wallpaper-green.png)" : "url(/images/adventure-bg.png)"}}></div>
+        <div className="col-3 col-lg-4" id="first-screen-image" style={{backgroundImage: (props.id === 1) ? "url('https://supervo1d.github.io/cowboysvscyborgs/images/wallpaper-green.png')" : "url('https://supervo1d.github.io/cowboysvscyborgs/images/adventure-bg.png')"}}></div>
         <div className="cvsc-card-container cvsc-card-container-sm position-relative" style={{marginTop: "90px"}}>
           <div style={{width: "790px"}}>
             <Link className="cvsc-card" to="shop" smooth={true} duration={600} role="button">
               <h3>Что внутри</h3>
             </Link>
-            <a onClick={e => leftClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/timothy_chalamet.jpg')"} : {backgroundImage: "url('images/cowboys.svg')"}} href="/" role="button">
+            <a onClick={e => leftClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/timothy_chalamet.jpg')"} : {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/cowboys.svg')"}} href="/" role="button">
               <h3>Ковбои</h3>
             </a>
-            <a onClick={e => rightClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/cyborg-light.jpg')"} : {backgroundImage: "url('images/cyborgs.svg')"}} href="/" role="button">
+            <a onClick={e => rightClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/cyborg-light.jpg')"} : {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/cyborgs.svg')"}} href="/" role="button">
               <h3>Киборги</h3>
             </a>
           </div>    
@@ -88,10 +88,10 @@ const FirstScreen = (props) => {
               <Link className="cvsc-card" to="shop" smooth={true} duration={600} role="button">
                 <h3>Что внутри</h3>
               </Link>
-              <a onClick={e => leftClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/timothy_chalamet.jpg')"} : {backgroundImage: "url('images/cowboys.svg')"}} href="/" role="button">
+              <a onClick={e => leftClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/timothy_chalamet.jpg')"} : {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/cowboys.svg')"}} href="/" role="button">
                 <h3>Ковбои</h3>
               </a>
-              <a onClick={e => rightClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('images/cyborg-light.jpg')"} : {backgroundImage: "url('images/cyborgs.svg')"}} href="/" role="button"> 
+              <a onClick={e => rightClicked(e)} className="cvsc-card" style={(props.id === 2 || props.id === 6) ? {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/cyborg-light.jpg')"} : {backgroundImage: "url('https://supervo1d.github.io/cowboysvscyborgs/images/cyborgs.svg')"}} href="/" role="button"> 
                 <h3>Киборги</h3>
               </a>
             </div>    

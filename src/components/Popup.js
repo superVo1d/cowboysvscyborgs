@@ -77,7 +77,7 @@ const Popup = (props) => {
     	if (props.id === 2 || props.id === 6) {
 			return (<div className="text-center">
 		        		<h2>Дорогая, ни в чем себе не отказывай!</h2>
-		        		<img className="w-100 py-4" src="/images/sales.jpg" style={{maxWidth: "300px"}} />
+		        		<img className="w-100 py-4" src="https://supervo1d.github.io/cowboysvscyborgs/images/sales.jpg" style={{maxWidth: "300px"}} />
 						<p className="lead">Если при покупке ты введешь наш секретрный код, то сможешь получить стандартный набор по&nbsp;цене базового!</p>
 						<h3 className="mt-4">ASHOT69</h3>
 						<p className="lead pt-2">
@@ -107,7 +107,7 @@ const Popup = (props) => {
 		<>
 			<div onClick={(e) => closePopupModal(e)} className="checkout overlay">
 		      <a onClick={(e) => closePopupModal(e)} className="cross-btn position-fixed" role="button" href="/">
-		        <img className="cross-btn-icon" src="images/close.svg" alt="close" />
+		        <img className="cross-btn-icon" src="https://supervo1d.github.io/cowboysvscyborgs/images/close.svg" alt="close" />
 		      </a>
 		      <div className="checkout-form popup">
 		        <div className="px-3 px-sm-5 py-5 text-center">

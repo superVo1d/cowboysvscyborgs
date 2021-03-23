@@ -11,13 +11,13 @@ const SecondScreen = (props) => {
         <div className="col text-center position-relative">
           <h2>ТЕБЯ УЖЕ ЖДУТ</h2>
           {(props.id === 1) &&
-            <img className ="sun position-absolute" src="images/sun.gif" style={{top: 0, right: 0}} />
+            <img className ="sun position-absolute" src="https://supervo1d.github.io/cowboysvscyborgs/images/sun.gif" style={{top: 0, right: 0}} />
           }
           {(props.id === 3 || props.id === 6) &&
-            <img className ="sun position-absolute" src="images/sun.png" style={{top: 0, right: 0}} />
+            <img className ="sun position-absolute" src="https://supervo1d.github.io/cowboysvscyborgs/images/sun.png" style={{top: 0, right: 0}} />
           }
           {(props.id === 3 || props.id === 6) &&
-            <img className ="sun position-absolute" src="images/rabbit.gif" style={{top: "100px", left: "20px", zIndex: 3}} />
+            <img className ="sun position-absolute" src="https://supervo1d.github.io/cowboysvscyborgs/images/rabbit.gif" style={{top: "100px", left: "20px", zIndex: 3}} />
           }
         </div>
       </div>
@@ -26,9 +26,9 @@ const SecondScreen = (props) => {
         <div className="col-12 col-md-6 px-0 px-sm-5 frame">
             <span className="helper"></span>
             {(props.id === 1) ?
-              <img className="card-stack w-100" src="/images/dancing_coffin.gif" alt="dancing_coffin.gif" />
+              <img className="card-stack w-100" src="https://supervo1d.github.io/cowboysvscyborgs/images/dancing_coffin.gif" alt="dancing_coffin.gif" />
               :
-              <img className="card-stack w-100" src="/images/card-stack-blue.png" alt="card-stack-blue.png" />
+              <img className="card-stack w-100" src="https://supervo1d.github.io/cowboysvscyborgs/images/card-stack-blue.png" alt="card-stack-blue.png" />
             }
         </div>
         <div className="col-12 col-md-5 pt-3 pb-0 pb-md-3">
