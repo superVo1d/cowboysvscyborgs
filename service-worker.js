@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cowboysvscyborgs/precache-manifest.b4a60f7eb6a410d97aee6b4f1a3d8398.js"
+  "/cowboysvscyborgs/precache-manifest.1c4af511ee310a04ebfc96269e866256.js"
 );
 
 self.addEventListener('message', (event) => {
